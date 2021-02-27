@@ -34,6 +34,11 @@
 ![稿定设计导出-20210227-105104](https://gitee.com/bruce_qiq/picture/raw/master/2021-2-27/1614394310782-%E7%A8%BF%E5%AE%9A%E8%AE%BE%E8%AE%A1%E5%AF%BC%E5%87%BA-20210227-105104.jpg)
 ![稿定设计导出-20210227-105137](https://gitee.com/bruce_qiq/picture/raw/master/2021-2-27/1614394318798-%E7%A8%BF%E5%AE%9A%E8%AE%BE%E8%AE%A1%E5%AF%BC%E5%87%BA-20210227-105137.jpg)
 
+## 预览地址
+
+![gh_b5e1c7bb8d27_258](https://gitee.com/bruce_qiq/picture/raw/master/2021-2-27/1614394651341-gh_b5e1c7bb8d27_258.jpg)
+
+> 该预览地址存在被更换为其他小程序的可能，如果有需要提前预览没有小程序账号的。可以根据底部的联系方式找到我。欢迎随时骚扰7*24。
 
 ## 部署文档
 

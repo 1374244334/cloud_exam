@@ -1,0 +1,14 @@
+.fixed-bottom {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+.my-bar {
+	display: flex;
+	position: relative;
+	align-items: center;
+	min-height: 120rpx;
+	justify-content: space-between;
+  width: 100%;
+}
+

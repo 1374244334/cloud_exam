@@ -1,0 +1,45 @@
+<cu-custom bgColor="bg-orange" isBack="{{true}}">
+  <view slot="content">发表评价</view>
+</cu-custom>
+
+<view class="cu-list menu-avatar solid-bottom">
+  <view class="cu-item">
+    <view class="cu-avatar round l" style="background-image:url({{teaInf.avatar}});"></view>
+    <view class="content flex-sub">
+      <view class="text-gray">{{teaInf.name}}</view>
+      <view class="text-cut text-gray" style="width:160px">
+        <text>{{teaInf.info}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="cu-form-group">
+  <textarea maxlength="-1" bindinput="textareaAInput" placeholder="吐槽or点赞，期待你的评价！" style="height:400rpx"></textarea>
+</view>
+
+<view class="cu-bar bg-white margin-top solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>评分
+  </view>
+</view>
+
+
+<view class='box bg-white'>
+  <text class='margin'>整体评价</text>
+  <block wx:for='{{scoreArray}}' wx:key='item'>
+    <view class='starLen' bindtouchmove='changeScore' bindtap='changeScore'>
+      <image class='star' src="{{score>index?fullStarUrl:nullStarUrl}}" />
+    </view>
+  </block>
+  <view class='scoreContent'>{{scoreContent}}</view>
+</view>
+
+<view class="cu-bar bg-white fixed-bottom">
+  <view class="radius fl padding-sm">
+    <button class="cu-btn bg-orange round shadow-blur" bindtap="submit">发表</button>
+  </view>
+  <view class="radius fr padding-sm">
+    <button class="cu-btn bg-red round shadow-blur" bindtap="back">返回</button>
+  </view>
+</view>

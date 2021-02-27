@@ -1,0 +1,16 @@
+page{
+  background-color: white;
+}
+.fixed-bottom{
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+.screen-swiper {
+	min-height: 475rpx;
+}
+.box{
+  width: 50%;
+}
+
+

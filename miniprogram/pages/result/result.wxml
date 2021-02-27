@@ -1,0 +1,56 @@
+<cu-custom bgColor="bg-gradual-pink" isBack='{{false}}'>
+  <view slot="content">结果</view>
+</cu-custom>
+
+<view class="cu-bar bg-white">
+  <view class="action">
+    <text class="cuIcon-title text-blue"></text>考试结果</view>
+</view>
+
+<view wx:if="{{score>=60}}">
+  <scroll-view scroll-y="true" style="height:50vh;">
+    <view style="text-align:center;" class="margin-top-xl padding-top-xl">
+      <view wx:for='{{chooseArr}}' wx:key class="center margin" style="display:inline-block;">
+        <view class="text-gray">{{index+1}}</view>
+        <view class="{{item==answerArr[index]?'bg-green':'bg-red'}} round box solids">
+          {{item}}
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+
+  <view class="padding bg-green radius animation-slide-bottom" style='width:600rpx;margin:0 auto;animation-delay: 0.5s;text-align:center;'>
+    您的分数为{{score}}分
+  </view>
+  <view class="fixed-bottom">
+    <view class="margin-xl padding-bottom-xl">
+      <button class="fl cu-btn round bg-blue shadow" bindtap="goOrder">前往预约</button>
+      <button class="fr cu-btn round bg-gradual-pink shadow" bindtap="goIndex">返回首页</button>
+    </view>
+  </view>
+</view>
+
+
+<view wx:else>
+  <scroll-view scroll-y="true" style="height:50vh;">
+    <view style="text-align:center;" class="margin-top-xl padding-top-xl">
+      <view wx:for='{{chooseArr}}' wx:key class="center margin" style="display:inline-block;">
+        <view class="text-gray">{{index+1}}</view>
+        <view class="{{item==answerArr[index]?'bg-green':'bg-red'}} round box solids">
+          {{item}}
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="padding bg-red radius animation-slide-bottom" style='width:600rpx;margin:0 auto;animation-delay: 0.5s;text-align:center;'>
+    您的分数为{{score}}分
+  </view>
+  <view class="fixed-bottom">
+    <view class="margin-xl padding-bottom-xl">
+      <button class="fl cu-btn round bg-blue shadow" bindtap="goOrder" disabled="true">前往预约</button>
+      <button class="fr cu-btn round bg-gradual-pink shadow" bindtap="goIndex">返回首页</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+.box{
+width: 80rpx;
+height: 80rpx;
+}
+.center{
+   text-align: center;
+   line-height: 80rpx;
+}
+.fixed-bottom{
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
